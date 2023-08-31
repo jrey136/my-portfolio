@@ -1,4 +1,271 @@
-.img-1{
-    width: -500px;
-    height: -500px;
+
+:root {
+    --background: rgba(47, 87, 247, 0.8);
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: 'system-ui', sans-serif;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header{
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+}
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+    color: #000;
+}
+    
+.nav-toggle:checked ~ nav {
+    display: none;
+}
+
+.card-2 {
+    width: 2000px;
+    height: 800px;
+    padding: 5px; 
+    background-color: var(--background);
+    top: 75px;
+    position: absolute;
+}
+
+.card2-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+.about-me {
+    color: rgb(47, 87, 247, 0.8);
+    position: absolute;
+    top: 1300px;
+}
+
+.about-me-p {
+    margin-top: 60px;
+    font-size: large;
+}
+
+.box-1 {
+    height: 800px;
+    width: 300px;
+    border: 2px;
+    background-color: white;
+    margin: 5%;
+    border: 3px solid var(--background);
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.row {
+    display: inline;
+    flex: wrap;
+
+}
+
+.card {
+    width: 235px;
+    height: 290px;  
+    background-color: white;
+    border: 3px solid var(--background);
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box-2 {
+    height: 1200px;
+    width: 1200px;
+    background-color: white;
+    position: center;
+    float: right;
+    margin-top: 200px;
+    margin-right: 450px;
+    padding: 15px;
+    border: 3px solid var(--background);
+}
+
+.work {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--background);
+    position: relative;
+    
+}
+
+.pro1-box {
+    height: 450px;
+    width: 1000px;
+    border: 3px solid var(--background);
+    color: black;
+    background-color: white;
+    background-image: url(https://albertawilderness.ca/wp-content/uploads/2019/01/IMG_3385-1024x768.jpg);
+}
+
+.pro1-name-tag {
+    height: 100px;
+    width: 200px;
+    background-color: var(--background);
+    margin-right: 160px;
+    margin-top: 250px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.pro2-box {
+    height: 300px;
+    width: 500px;
+    margin-right: 600px;
+    margin-top: 15px;
+    border: 3px solid var(--background);
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/02/06/613023/c32c9d4b9dfaea68beb2f83191b5fc71.jpg);
+    position: relative;
+}
+
+.pro3-box {
+    height: 300px;
+    width: 500px;
+    margin-left: 600px;
+    margin-bottom: 1000px;
+    border: 3px solid var(--background);
+    background-image: url(http://wallpapercave.com/wp/LiSEiMS.jpg);
+}
+
+.pro2-name-tag {
+    height: 60px;
+    width: 125px;
+    background-color: var(--background);
+    margin-right: 160px;
+    margin-top: 200px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.pro3-name-tag {
+    height: 60px;
+    width: 125px;
+    background-color: var(--background);
+    margin-right: 160px;
+    margin-top: 200px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.box-3 {
+    height: 200px;
+    width: 1500px;
+    background-color: white;
+    position: relative;
+    margin-top: 1500px;
+    border: 3px solid var(--background);
+    color: var(--background);
+    font-size: larger;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.email {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.phone {
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    padding-left: 600px;
+    margin-top: 10px;
 }

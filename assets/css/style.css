@@ -106,7 +106,7 @@ nav a:hover {
     width: 2000px;
     height: 800px;
     padding: 5px; 
-    background-color: var(--background);
+    /* background-color: var(--background); */
     top: 75px;
     position: absolute;
 }
@@ -136,14 +136,16 @@ nav a:hover {
     border: 2px;
     background-color: white;
     margin: 5%;
-    border: 3px solid var(--background);
+    /* border: 3px solid var(--background); */
     padding: 5px;
     margin-right: 50px;
 }
 
 .row {
-    display: inline;
+    display: inline-flex;
     flex: wrap;
+    /* margin-top: 200px; */
+    margin-bottom: 200px;
 
 }
 
@@ -170,7 +172,9 @@ nav a:hover {
     margin-top: 200px;
     margin-right: 450px;
     padding: 15px;
-    border: 3px solid var(--background);
+    /* border: 3px solid var(--background); */
+    display: block;
+    justify-content: center;
 }
 
 .work {
@@ -183,13 +187,17 @@ nav a:hover {
 
 .pro1-box {
     height: 450px;
-    width: 1000px;
-    border: 3px solid var(--background);
+    width: 800px;
     color: black;
     background-color: white;
-    background-image: url(https://albertawilderness.ca/wp-content/uploads/2019/01/IMG_3385-1024x768.jpg);
+    margin-bottom: 100px;
+    margin-left: 180px;
 }
 
+.pro1-img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .pro1-name-tag {
     height: 100px;
     width: 200px;
@@ -204,20 +212,22 @@ nav a:hover {
 .pro2-box {
     height: 300px;
     width: 500px;
-    margin-right: 600px;
-    margin-top: 15px;
+    /* margin-right: 600px; */
+    /* margin-top: 15px; */
     border: 3px solid var(--background);
     background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/02/06/613023/c32c9d4b9dfaea68beb2f83191b5fc71.jpg);
     position: relative;
+    display: flex;
 }
 
 .pro3-box {
     height: 300px;
     width: 500px;
-    margin-left: 600px;
-    margin-bottom: 1000px;
+    /* margin-left: 600px;
+    margin-bottom: 1000px; */
     border: 3px solid var(--background);
     background-image: url(http://wallpapercave.com/wp/LiSEiMS.jpg);
+    display: flex;
 }
 
 .pro2-name-tag {
